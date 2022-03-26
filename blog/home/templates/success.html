@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block start %}
+<div class="container-fluid px-3">
+    <div class="row min-vh-100">
+        <div class="col-md-8 col-lg-6 col-xl-5 d-flex align-items-center">
+            <div class="w-100 py-5 px-md-5 px-xl-6 position-relative">
+                <h3 class ="card-title text-center">Your mail is verified, you can login now</h3>
+
+                <a class ="btn btn-primary" href="{% url 'login_view' %}">login</a>
+                               
+            <!-- Image-->
+            <div class="bg-cover h-100 mr-n3"
+                style="background-image: url(https://images.pexels.com/photos/1995730/pexels-photo-1995730.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}
